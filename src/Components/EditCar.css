@@ -1,0 +1,153 @@
+.EditCar_Container {
+    background-image: url("./Images/FormBackGround.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width : 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.CarImageEdit {
+    width: 40%;
+    height: 400px;
+    margin: 20px;
+    position: relative; 
+    display: inline-block;
+    margin-right: 20px;
+    transition: all 0.5s ease-in-out;
+}
+
+.CarImageEdit > img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    transition: all 0.1s ease-in-out;
+}
+
+.ChangeImg {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    position: absolute; 
+    top: 50%; 
+    transform: translate(-50%, -50%); 
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 17px;
+    transition: all 0.1s ease-in-out;
+}
+
+.ChangeImg:hover {
+    background-color: rgb(150, 0, 0);
+    width: 41px;
+    height: 41px;
+}
+
+#PrevImg {
+    left: 30px;
+}
+
+#NextImg {
+    right: -10px;
+}
+
+.Car_Edit_Container {
+    position: relative;
+    padding: 40px;
+    padding-top: 80px;
+    width : 400px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("./Images/Form.jpg");
+    position: relative;
+}
+
+.Car_Edit_Container > span {
+    position: absolute;
+    top: 30px;
+    background-color: rgba(255, 255, 255, 0);
+    color: aliceblue;
+    opacity: 0.85;
+    font-weight: bolder;
+}
+
+.Car_Edit_Container > input {
+    border: 0;
+    box-shadow: none;
+    display: block;
+    height: 30px;
+    width: 90%;
+    line-height: 30px;
+    padding: 8px 15px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.05);
+    font-size: 12px;
+    background-color: rgba(255, 255, 255, 0);
+    color: aliceblue;
+    opacity: 0.75;
+    font-weight: bold;
+  }
+
+  .Delete_Car_Btn {
+    background-color: rgb(100, 0, 0);
+    width : 150px;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    color: aliceblue;
+    font-weight: bold;
+    transition: background-color 500ms ease;
+  }
+
+  .Delete_Car_Btn:hover {
+    background-color: rgb(200, 0, 0);
+  }
+#CarImageSection {
+    width: 300px;
+    height: fit-content;
+    margin: 20px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("./Images/Form.jpg");
+    color: aliceblue;
+    font-weight: bold;
+    opacity: 0.95;
+}
+
+@media (max-width: 960px) {
+    .EditCar_Container {
+        flex-direction: column;
+    }
+
+    #CarImageSection {
+        width: 200px;
+    }
+    .addCar_Container {
+        flex-direction: column;
+    }
+    .CarImageEdit {
+        height: 260px;
+        width: 80%;
+        margin-bottom: 70px;
+    }
+    .Car_Edit_Container {
+        width : 280px;
+    }
+    
+}
+  
