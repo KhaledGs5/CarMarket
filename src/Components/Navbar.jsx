@@ -7,7 +7,7 @@ import menu from './Images/menu.png'
 import { NavLink } from "react-router-dom";
 import { useVariablesValue } from "./Context";
 
-
+//Khaled Gassara
 
 const  NavBar = () => {
     const {userName} = useVariablesValue("");
