@@ -1,0 +1,221 @@
+
+.BigContainer {
+    height: fit-content;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.NavbarContainer {
+    position: relative;
+    background: linear-gradient(to right, rgb(0, 0, 0), rgb(72, 72, 72));
+    margin : 0px;
+    height : 70px;
+    justify-content: left;
+    display: flex;
+    box-sizing: border-box;
+    border-bottom: 1px solid rgba(215, 215, 215, 0.034);
+}
+#signupbtn{
+    position : absolute;
+    right : 100px;
+    visibility: visible;
+}
+
+#signupbtnHidden{
+    visibility: hidden;
+}
+
+#signinbtn{
+    position : absolute;
+    right : 10px;
+    visibility: visible;
+}
+#signinbtnHidden {
+    visibility: hidden;
+}
+#signoutbtnHidden{
+    visibility: hidden;
+}
+
+#signoutbtn {
+    visibility: visible;
+    position : absolute;
+    right : 10px;
+}
+
+#signupimg{
+    width: 25px;
+    height: 25px;
+    margin-right: 15px;
+}   
+#signoutimg{
+    width: 25px;
+    height: 25px;
+    margin-right: 15px;
+}
+.NavContainer {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin: 0px;
+    box-sizing: border-box;
+    margin-left: 50px;
+    visibility: visible;
+}
+
+.LogoContainer {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin: 0px;
+    box-sizing: border-box;
+    margin-left: 50px;
+}
+.LogoContainer > img {
+    width: 200px;
+    height: 90%;
+}
+.btn {
+    font-weight: bold;
+    font-size: 15px;
+    text-decoration: none;
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    opacity: 0.75;
+    height: 100%;
+    box-sizing: border-box;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+  
+.btn:hover {
+    opacity: 1;
+}
+  
+.btn::before {
+    transition: 300ms;
+    height: 4px;
+    content: "";
+    position: absolute;
+    background-color: rgb(150, 0, 0);
+}
+  
+.btn_ltr::before {
+    width: 0%;
+    bottom: 0px;
+}
+  
+.btn_ltr:hover::before {
+    width: 100%;
+}
+
+.btn.active {
+    color: rgb(255, 0, 0);
+}
+
+#userName{
+    font-size: 15px;
+    margin-right: 20px;
+}
+
+.NavbarContainer > .NavContainer > .btn , .NavbarContainer > #signoutbtn ,.NavbarContainer > #signinbtn ,.NavbarContainer > #signupbtn {
+    visibility: visible;
+}
+
+.Toggle_SideBar_Btn {
+    visibility: hidden;
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    cursor: pointer;
+}
+.Toggle_SideBar_Btn > img {
+    width: 100%;
+    height: 100%;
+}
+
+.SideBar {
+    visibility: hidden;
+    width: 0px;
+    height: 100vh;
+    background-color: rgb(57, 57, 57);
+    position: absolute;
+    top: 70px;
+    right: 0px;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+}
+
+.SideBar > .NavContainer , .SideBar > .NavContainer > .btn , .SideBar > #signoutbtn , .SideBar > #signupbtn , .SideBar > #signinbtn{
+    visibility: hidden;
+}
+
+.SideBar.Opened {
+    visibility: visible;
+    width: 45%;
+}
+
+.SideBar.Opened > .NavContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    visibility: visible;
+    margin: 0;
+    margin-top: 140px;
+}
+
+.SideBar.Opened > .NavContainer > .btn {
+    height: 70px;
+    width: 80%;
+    visibility: visible;
+}
+
+.SideBar.Opened > #signoutbtn {
+    height: 70px;
+    width: 80%;
+    visibility: visible;
+    right: 8%;
+}
+
+.SideBar.Opened > #signinbtn {
+    height: 70px;
+    width: 80%;
+    visibility: visible;
+    right: 10%;
+    top:70px;
+}
+
+.SideBar.Opened > #signupbtn {
+    height: 70px;
+    width: 80%;
+    visibility: visible;
+    right: 10%;
+}
+
+@media (max-width: 960px) {
+    .Toggle_SideBar_Btn {
+        visibility: visible;
+    }
+    .NavbarContainer  > .NavContainer > .btn , .NavbarContainer > #signoutbtn ,.NavbarContainer > #signinbtn ,.NavbarContainer > #signupbtn{
+        visibility: hidden;
+    }
+}

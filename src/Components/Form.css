@@ -1,0 +1,197 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+.Form_Big_Container{
+  background-image: url("./Images/FormBackGround.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+  width : 100%;
+  min-height: 105vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  position: absolute;
+  top: 25%;
+  padding: 10px;
+  width : 400px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("./Images/Form.jpg");
+}
+.form_container {
+  padding: 20px;
+  width : 80%;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0);
+}
+#ftlt {
+  position: absolute;
+  top: 17%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: aliceblue;
+  font-weight: bold;
+  font-size: 30px;
+  font-family: cursive;
+}
+
+#frm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; 
+  width: 80%;
+}
+
+form > div > input {
+  color: aliceblue;
+  font-weight: bold;
+  opacity: 0.75;
+  border: 0;
+  box-shadow: none;
+  display: block;
+  height: 30px;
+  width: 100%;
+  line-height: 30px;
+  padding: 8px 15px;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.05);
+  font-size: 12px;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.checkboxsignup {
+  width : 15px;
+  height: 15px;
+  border: 2px solid #ccc;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 4px;
+  transition: background-color 0.3s, border-color 0.3s;
+  outline: none;
+  cursor: pointer;
+}
+
+.checkboxsignup:checked {
+  background-color: rgb(89, 0, 0);
+  border-color: #2a2a2a78;
+}
+
+#Gendre_Choose {
+  border: 0;
+  box-shadow: none;
+  display: flex;
+  align-items: center;
+  height: 30px;
+  width: 100%;
+  line-height: 30px;
+  padding: 8px 15px;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.05);
+  font-size: 12px;
+  background-color: rgba(255, 255, 255, 0);
+  color: aliceblue;
+  font-weight: bold;
+  opacity: 0.75;
+}
+
+
+.form_holder {
+  border-radius: 15px;
+  background-color: rgba(255, 255, 255, 0);
+  overflow: hidden;
+  opacity: 1;
+  visibility: visible;
+  margin-top: 30px;
+  opacity: 1;
+  width: 100%;
+}
+#submit_btn {
+  background-color: rgba(50, 0, 0, 1);
+  color: aliceblue;
+  opacity: 0.75;
+  border:0;
+  border-radius: 15px;
+  display: block;
+  margin: 15px auto; 
+  padding: 15px 45px;
+  width: 100%;
+  font-size: 13px;
+  font-weight: bold;
+  cursor: pointer;
+  visibility: visible;
+  transition: background-color 300ms ease;
+}
+#submit_btn:hover {
+  background-color: rgb(200, 0, 0);
+  opacity: 1;
+}
+#Swap_btn {
+  background-color: rgb(10, 0, 0);
+  color: aliceblue;
+  border:0;
+  border-radius: 15px;
+  display: block; 
+  padding: 15px 45px;
+  width: 100%;
+  height: 45px;
+  cursor: pointer;
+  transition: all 300ms ease-in-out;
+  padding:0;
+  margin:0;
+}
+#Swap_btn:hover{
+  background-color: rgba(0, 0, 0, 0.519);
+}
+
+#Swap_btn_txt{
+  color: aliceblue;
+  opacity: 0.75;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: bold;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  transition: all 300ms ease-in-out;
+}
+#Swap_btn_txt:hover{
+  opacity: 1;
+}
+
+#OutMessage{
+  width: 70%;
+  font-size: 15px;
+  color: rgb(159, 0, 0);
+  font-weight: bold;
+  text-align: center;
+}
+
+@media (max-width: 960px) {
+  .container {
+      width: 280px;
+  }
+  .form_container {
+    width : 100%;
+  }
+}
+
+
+
+

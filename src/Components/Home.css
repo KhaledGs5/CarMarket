@@ -1,0 +1,65 @@
+.HomeContainer{
+    background-image: url("./Images/BackGround.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    width : 100%;
+    min-height: 105vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#Welcoming_To_Page {
+    font-size: 30px;
+    font-family: cursive;
+    font-weight: bold;
+    color: aliceblue;
+    opacity: 0.8;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#Choose_Container {
+    width : 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.Choose_btn {
+    width: 200px;
+    height: 70px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgba(50, 0, 0, 1);
+    color: aliceblue;
+    opacity: 0.75;
+    cursor: pointer;
+    font-size: large;
+    margin: 20px;
+    transition: all 0.2s ease-in-out;
+    font-weight: bold;
+}
+
+.Choose_btn:hover{
+    background-color: rgb(150, 0, 0);
+    width: 205px;
+    height: 75px;
+    opacity: 1;
+}
+
+
+@media (max-width: 960px) {
+    #Choose_Container {
+        flex-direction: column;
+    }
+}
+
+
+

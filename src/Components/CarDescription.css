@@ -1,0 +1,266 @@
+.carDescription_Container{
+    background-image: url("./Images/ProductsBackGround.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width : 100%;
+    min-height: 120vh;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 550px 300px;
+    gap: 0px; 
+    justify-content: center;
+    align-items: flex-start;
+    position: relative;
+}
+
+.CarImage {
+    width: 100%;
+    height: 400px;
+    margin-left: 20px;
+    margin-top: 20px;
+    position: relative; 
+    display: inline-block;
+    transition: all 0.5s ease-in-out;
+}
+
+.CarImage > img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    transition: all 0.1s ease-in-out;
+}
+
+.ChangeImg {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    position: absolute; 
+    top: 50%; 
+    transform: translate(-50%, -50%); 
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 17px;
+    transition: all 0.1s ease-in-out;
+}
+
+.ChangeImg:hover {
+    background-color: rgb(150, 0, 0);
+    width: 41px;
+    height: 41px;
+}
+
+#PrevImg {
+    left: 30px;
+}
+
+#NextImg {
+    right: -10px;
+}
+
+#BuyBtn {
+    width : 80px;
+    height: 45px;
+    background-color: rgba(80, 0, 0, 1);
+    color: aliceblue;
+    font-weight: bold;
+    opacity: 0.85;
+    border : none;
+    border-radius: 10px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: background-color 400ms ease-in-out;
+}
+
+#BuyBtn:hover {
+    background-color: rgb(200, 0, 0);
+    opacity: 1;
+}
+
+.data_container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 500px;
+    margin-top: 20px;
+}
+.Car_Informations{
+    border-radius: 20px;
+    width: 75%; 
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-image: url("./Images/Form.jpg");
+}
+.Car_Description {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, auto);
+    gap: 0px; 
+    border-radius: 20px;
+    width: 100%; 
+    height: 100%;
+}
+
+.item {
+    border: 1px solid rgba(190, 187, 187, 0.252); 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    color: aliceblue;
+    opacity: 0.75;
+    min-height: 40px;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+
+.litem {
+    width: 100%;
+    height: 100px;
+    font-size: 12px;
+    font-weight: bold;
+    color: aliceblue;
+    opacity: 0.75;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.item:first-child {
+    border-radius: 20px 0 0 0;
+  }
+  
+.item:nth-child(3) {
+    border-radius: 0 20px 0 0;
+}
+
+
+
+.item > div {
+    font-size: 15px;
+    font-weight: bold;
+    color: aliceblue;
+    opacity: 0.75;
+    padding-bottom: 20px;
+}
+
+#ReturnToProducts {
+    width : 80px;
+    height: 45px;
+    background-color: rgba(80, 0, 0, 1);
+    color: aliceblue;
+    font-weight: bold;
+    opacity: 0.85;
+    border : none;
+    border-radius: 10px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: all 100ms ease-in-out;
+    margin-left: 20px;
+}
+
+#ReturnToProducts:hover {
+    background-color: rgb(200, 0, 0);
+    opacity: 1;
+}
+
+#CarDescBtns > span {
+    color: aliceblue;
+}
+#CarDescBtns > span > a {
+    color: aliceblue;
+    text-decoration: none;
+}
+
+.user_data_container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 0px; 
+    border-radius: 20px;
+    width: 100%; 
+    height: fit-content;
+    margin-left: 20px;
+    background-image: url("./Images/Form.jpg");
+}
+
+.uitem {
+    border: 1px solid rgba(190, 187, 187, 0.252); 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    color: aliceblue;
+    opacity: 0.75;
+    min-height: 40px;
+    box-sizing: border-box;
+    padding: 20px;
+    overflow: auto;
+    padding-left: 50px;
+} 
+
+.uitem > div {
+    font-size: 15px;
+    font-weight: bold;
+    color: aliceblue;
+    opacity: 0.75;
+    padding-bottom: 20px;
+}
+
+.uitem:first-child {
+    border-radius : 20px 0 0 0;
+}
+.uitem:nth-child(2) {
+    border-radius : 0 20px 0 0;
+}
+.uitem:nth-child(3) {
+    border-radius : 0 0 0 20px;
+}
+.uitem:nth-child(4) {
+    border-radius : 0 0 20px 0 ;
+}
+
+
+@media (max-width: 1300px) {
+    .Car_Description {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .item:first-child {
+        border-radius: 20px 0 0 0;
+      }
+      
+    .item:nth-child(3) {
+        border-radius: 0 0 0 0;
+    }
+    .item:nth-child(2) {
+        border-radius: 0 20px 0 0;
+    }
+}
+
+@media (max-width: 960px) {
+    .carDescription_Container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .CarImage {
+        height: 300px;
+        width: 80%;
+    }
+    .user_data_container{
+        margin-top: 300px;
+        margin-bottom: 50px;
+        width: 70%;
+    }
+    
+}
+

@@ -1,0 +1,103 @@
+.buyCar_Container {
+    background-image: url("./Images/ProductsBackGround.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgb(87, 106, 122);
+    width : 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative
+}
+
+
+#buy_container {
+    position: relative;
+    height: 400px;
+    padding: 20px;
+    width : 350px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("./Images/Form.jpg");
+}
+
+#frmbuycar  > input {
+    border: 0;
+    box-shadow: none;
+    display: block;
+    height: 30px;
+    width: 90%;
+    line-height: 30px;
+    padding: 8px 15px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.05);
+    font-size: 12px;
+    background-color: rgba(255, 255, 255, 0);
+    color: aliceblue;
+    opacity: 0.75;
+    font-weight: bold;
+  }
+
+.BuyCarBtn {
+    width : 80px;
+    height: 45px;
+    background-color: rgba(50, 0, 0, 1);
+    color: aliceblue;
+    opacity: 0.75;
+    font-weight: bold;
+    border : none;
+    border-radius: 10px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: background-color 100ms ease-in-out;
+    margin-left: 20px;
+}
+
+.BuyCarBtn:hover {
+    background-color: rgb(200, 0, 0);
+    opacity: 1;
+}
+
+#buycartlt {
+    position: absolute;
+    top: 10%;
+    background-color: rgba(255, 255, 255, 0);
+    color: aliceblue;
+    opacity: 0.85;
+    font-weight: bolder;
+}
+
+.SuccessBuy{
+    color : aliceblue;
+}
+
+.BackToHome {
+    width : 80px;
+    height: 45px;
+    background-color: rgba(50, 0, 0, 1);
+    color: aliceblue;
+    opacity: 0.75;
+    font-weight: bold;
+    border : none;
+    border-radius: 10px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: background-color 100ms ease-in-out;
+    margin-left: 20px;
+}
+
+
+.BackToHome:hover {
+    background-color: rgb(200, 0, 0);
+    opacity: 1;
+}
+
+@media (max-width: 767px) {
+    #buy_container {
+        width : 250px;
+    }
+}
